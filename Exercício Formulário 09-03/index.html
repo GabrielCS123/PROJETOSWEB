@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div id="principal">
+
+        <h1>Formulário de inscrição de Evento</h1>
+
+        <div id="div1">
+
+            <p> Nome: <input type="text" name="nome" id="idnome" placeholder="Nome Completo"> </p>
+            <p> E-mail: <input type="text" name="email" id="idemail" placeholder="ex:myname@example.com"> </p>
+
+            <legend>Sexo</legend>
+            <input type="radio" name="tSexo" id="idSexom" checked /> <label for="idSexom"> Masculino</label>
+            <input type="radio" name="tSexo" id="idSexof" /> <label for="idSexof">Feminino</label>
+
+            <p> Cargo: <input name="nCargo" id="idCargo" type="text"> </p>
+            <p> Nascimento: <input name="nNasc" id="idNasc" type="date"> </p>
+            <p> Telefone: <input name="nTelefone" id="idTelefone" type="text"> </p>
+
+        </div>
+
+        <h2>Informações da Instição</h2>
+        <h3>Preencha os campos abaixo com as informações da empresa que trabalha</h3>
+
+        <div id="div2">
+
+            <p> Empresa: <input type="text"> </p>
+            <p> Endereço Completo: <input type="text"> </p>
+            <p> Cidade: <input type="text"> </p>
+
+
+            <p> <label for="cEst"> Estado: </label>
+                <select name="nEstado" id="idEstado">
+
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+
+                </select>
+            </p>
+
+            <p> Quant. Funcionários: <input name="func" id="idfunc" type="text"> </p>
+
+            <p> <label for="idMsg"> Mensagem:</label>
+                <textarea name="msg" id="idMsg"></textarea>
+            </p>
+
+        </div>
+
+        <br><br>
+
+        <input type="radio" name="nRecibo" id="idRecibo" /> <label for="idRecibo"> Emitir em nome da
+            instiruição.</label>
+
+        <br><br>
+
+        <button>Fazer inscrição</button>
+
+        <button> <a href="/Principal.html">Sair</a> </button>
+
+    </div>
+
+</body>
+
+</html>

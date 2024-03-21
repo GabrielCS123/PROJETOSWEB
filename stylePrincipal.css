@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+    background: linear-gradient(to right, rgb(0, 255, 242), rgb(0, 89, 255));
+    background-color: midnightblue;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#t1 {
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(0, 217, 255), 0 0 30px rgb(0, 217, 255), 0 0 50px rgb(0, 217, 255), 0 0 70px rgb(0, 217, 255), 0 0 100px rgb(0, 217, 255);
+}
+
+img {
+    width: 350px;
+    position: absolute;
+    top: 20%;
+    left: 34%;
+}
+
+#principal {
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.322);
+    margin: 10px;
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 8px;
+    background-color: rgb(40, 133, 209);
+    border: none;
+    padding:  5px;
+}
+
+button > a {
+    color: rgb(255, 255, 255);
+}
+
+li:hover > button > a {
+    color: rgb(189, 183, 183);
+}
+
+#rodape {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.322);
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+}
+
+#t2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
