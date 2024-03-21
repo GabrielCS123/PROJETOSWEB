@@ -5,6 +5,14 @@ body {
     background-color: midnightblue;
 }
 
+html {
+    height: 80%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,53 +20,32 @@ a {
 }
 
 #t1 {
-    text-align: center;
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 10px rgb(0, 217, 255), 0 0 30px rgb(0, 217, 255), 0 0 50px rgb(0, 217, 255), 0 0 70px rgb(0, 217, 255), 0 0 100px rgb(0, 217, 255);
 }
 
-img {
-    width: 350px;
-    position: absolute;
-    top: 20%;
-    left: 34%;
-}
-
 #principal {
-    position: absolute;
-    top: 20%;
-    left: 33%;
     padding: 30px;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.322);
-    margin: 10px;
-    width: 30%;
+    border: 3px solid;
+    animation: borda 3s infinite;
 }
 
 ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
 }
 
 li {
     margin-bottom: 10px;
-}
-
-button {
-    border-radius: 8px;
-    background-color: rgb(40, 133, 209);
-    border: none;
-    padding:  5px;
-}
-
-button > a {
-    color: rgb(255, 255, 255);
-}
-
-li:hover > button > a {
-    color: rgb(189, 183, 183);
 }
 
 #rodape {
@@ -71,8 +58,93 @@ li:hover > button > a {
     padding: 20px;
     bottom: 0;
     left: 0;
+
+}
+
+#rodape>h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #t2 {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Botão animado*/
+
+button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+/*Animações*/
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes borda {
+    0% {
+        border-color: rgb(221, 231, 233);
+    }
+
+    5% {
+        border-color: rgb(143, 142, 142);
+    }
+
+    100% {
+        border-color: rgb(255, 255, 255);
+    }
 }
